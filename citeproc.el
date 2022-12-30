@@ -196,7 +196,7 @@ formatting parameters keyed to the parameter names as symbols:
 			punct-in-quote)))
 	       itemdata)
       (let* ((raw-bib
-	      (if (cdr filters)
+	      (if (car filters)
 		  ;; There are several filters, we need to select and sort the subbibs.
 		  (let* ((nr-of-filters (length filters))
 		 	 (result (make-list nr-of-filters nil))
